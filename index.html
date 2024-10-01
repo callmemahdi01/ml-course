@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <title>پایتون مقدماتی و یادگیری ماشین</title>
+    <style>
+        body {
+            font-family: vazirmatn, 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 20px;
+            direction: rtl;
+            text-align: right;
+        }
+        h1 {
+            font-size: 24px;
+            color: #0d6efd;
+            text-align: center;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .accordion {
+            margin-bottom: 10px;
+        }
+        .accordion-header {
+            background-color: #e7f1ff;
+            color: #0d6efd;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            text-align: right;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        .accordion-header:hover {
+            background-color: #d0e3ff;
+        }
+        .accordion-content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f8f9fa;
+            border-radius: 0 0 5px 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            /* columns: 2;
+            -webkit-columns: 2;
+            -moz-columns: 2; */
+        }
+        li {
+            /* margin: 10px; */
+            font-size: 1em;
+            break-inside: avoid-column;
+        }
+        li::before {
+            content: "•";
+            color: #0d6efd;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>پایتون مقدماتی و یادگیری ماشین</h1>
+    <div class="container">
+        <div class="accordion">
+            <button class="accordion-header">پایتون مقدماتی</button>
+            <div class="accordion-content">
+                <ul>
+                    <li>Python Tutorial</li>
+                    <li>Python HOME</li>
+                    <li>Python Intro</li>
+                    <li>Python Get Started</li>
+                    <li>Python Syntax</li>
+                    <li>Python Comments</li>
+                    <li>Python Variables</li>
+                    <li>Python Data Types</li>
+                    <li>Python Numbers</li>
+                    <li>Python Casting</li>
+                    <li>Python Strings</li>
+                    <li>Python Booleans</li>
+                    <li>Python Operators</li>
+                    <li>Python Lists</li>
+                    <li>Python Tuples</li>
+                    <li>Python Sets</li>
+                    <li>Python Dictionaries</li>
+                    <li>Python If...Else</li>
+                    <li>Python While Loops</li>
+                    <li>Python For Loops</li>
+                    <li>Python Functions</li>
+                    <li>Python Lambda</li>
+                    <li>Python Arrays</li>
+                    <li>Python Classes/Objects</li>
+                    <li>Python Inheritance</li>
+                    <li>Python Iterators</li>
+                    <li>Python Polymorphism</li>
+                    <li>Python Scope</li>
+                    <li>Python Modules</li>
+                    <li>Python Dates</li>
+                    <li>Python Math</li>
+                    <li>Python JSON</li>
+                    <li>Python RegEx</li>
+                    <li>Python PIP</li>
+                    <li>Python Try...Except</li>
+                    <li>Python User Input</li>
+                    <li>Python String Formatting</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <button class="accordion-header">یادگیری نظارت شده</button>
+            <div class="accordion-content">
+                <h3>طبقه‌بندی (Classification)</h3>
+                <ul>
+                    <li>Decision Tree</li>
+                    <li>SVM</li>
+                    <li>KNN</li>
+                    <li>Random Forest</li>
+                </ul>
+
+                <h3>رگرسیون (Regression)</h3>
+                <ul>
+                    <li>Linear Regression</li>
+                    <li>Polynomial Regression</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <button class="accordion-header">یادگیری نظارت نشده</button>
+            <div class="accordion-content">
+                <h3>خوشه‌بندی (Clustering)</h3>
+                <ul>
+                    <li>K-means</li>
+                    <li>Hierarchical Clustering</li>
+                    <li>DBSCAN</li>
+                </ul>
+
+                <h3>کاهش ابعاد</h3>
+                <ul>
+                    <li>PCA</li>
+                </ul>
+
+                <h3>شبکه‌های عصبی مصنوعی (ANN)</h3>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion-header");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
